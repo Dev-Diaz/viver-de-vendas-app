@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Raleway&display=swap');
+
+:root {
+    margin: 0;
+	padding: 0;
+	border: 0;
+
+    /** CORES **/
+    --primary-yellow:#fff159;
+    --primary-grey:#a0a0a0;
+    --primary-grey-dark: #171a21;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cormorant', serif;
+}
+	
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-yellow);
+    font-weight: bold;
+    padding: 20px;
+    height: 70px;
+}
+
+nav svg:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+ul {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+li {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+li:hover{
+    color: white;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    height: calc(100vh - 110px);
+}
+
+#home {
+    background-color: var(--primary-grey-dark);
+    height: calc(100vh - 110px);
+    
+}
