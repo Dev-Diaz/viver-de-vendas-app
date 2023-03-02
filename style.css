@@ -10,6 +10,7 @@
     --primary-yellow:#fff159;
     --primary-grey:#a0a0a0;
     --primary-grey-dark: #171a21;
+    --primary-grey-light: #272c38;
 }
 
 * {
@@ -40,6 +41,10 @@ a {
 
 h1 {
     font-size: 35rem;
+}
+
+h2 {
+    font-size: 25rem;
 }
 	
 nav {
@@ -79,13 +84,14 @@ li {
 }
 
 a li:hover{
-    color: rgba(red, green, blue, alpha)
+    color: white;
 }
 
 
 #home {
     padding-top: 130px;
     width: 100%;
+    padding-bottom: 110px;
 }
 
 video {
@@ -94,11 +100,47 @@ video {
     margin-right: auto;
     width: 80%;
     height: calc(100vh - 130px);
+    box-shadow: 5px 5px 37px 17px #000000b2; 
 }
 
 #quemsomos {
-    height: 700px;
-    color: white;
+    color: var(--primary-yellow);
+    background-color: var(--primary-grey-light);
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgba(255,200,0,.5);
+    padding-top: 30rem;
+}
+
+#quemsomos .foto-perfil img{
+    border: 1px solid rgba(255,200,0,.5);
+    border-radius: 5px;
+    width: 450rem;
+    height: calc(100vh - 120rem);
+    -webkit-box-shadow: 5px 5px 37px 17px #000000b2; 
+    box-shadow: 5px 5px 37px 17px #000000b2; 
+}
+
+#quemsomos .display-perfil {
+    text-align: left;
     
+}
+
+#quemsomos .display-perfil h1{
+    margin-bottom: 30rem;
+    margin-left: 10rem;
+}
+
+#quemsomos .display-perfil h2 {
+    margin-bottom: 10rem;
+}
+
+#quemsomos .display-perfil i{
+    margin-bottom: 30rem;
+}
+
+#quemsomos .wrapper {
+    display: flex;
+    align-items: center;
 }
 
