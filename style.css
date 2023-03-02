@@ -22,7 +22,6 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: var(--primary-yellow);
-    font-weight: bold;
     padding-top: 20px;
     padding-bottom: 20px;
     height: 70px;
@@ -49,6 +48,7 @@ ul {
 li {
     transition: all 0.2s;
     cursor: pointer;
+    font-weight: bold;
 }
 
 li:hover{
@@ -61,7 +61,7 @@ main {
 
 #home {
     background-color: var(--primary-grey-dark);
-    height: calc(100vh - 70px);
+    height: calc(100vh - 90px);
     width: 100%;
 }
 
@@ -70,7 +70,7 @@ video {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 90px);
     
 }
 
