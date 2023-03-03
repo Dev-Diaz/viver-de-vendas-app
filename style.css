@@ -11,6 +11,7 @@
     --primary-grey:#a0a0a0;
     --primary-grey-dark: #171a21;
     --primary-grey-light: #272c38;
+    --primary-box-shadow: 5px 5px 37px 17px #000000b2;
 }
 
 * {
@@ -45,6 +46,10 @@ h1 {
 
 h2 {
     font-size: 25rem;
+}
+
+p {
+    font-size: 20rem;
 }
 	
 nav {
@@ -100,7 +105,8 @@ video {
     margin-right: auto;
     width: 80%;
     height: calc(100vh - 130px);
-    box-shadow: 5px 5px 37px 17px #000000b2; 
+    box-shadow: var(--primary-box-shadow);
+    border-radius: 5px;
 }
 
 #quemsomos {
@@ -117,30 +123,45 @@ video {
     border-radius: 5px;
     width: 450rem;
     height: calc(100vh - 120rem);
-    -webkit-box-shadow: 5px 5px 37px 17px #000000b2; 
-    box-shadow: 5px 5px 37px 17px #000000b2; 
+    -webkit-box-shadow: var(--primary-box-shadow);
+    box-shadow: var(--primary-box-shadow);
 }
 
 #quemsomos .display-perfil {
     text-align: left;
-    
 }
 
 #quemsomos .display-perfil h1{
-    margin-bottom: 30rem;
+    margin-bottom: 70rem;
     margin-left: 10rem;
 }
 
 #quemsomos .display-perfil h2 {
-    margin-bottom: 10rem;
-}
-
-#quemsomos .display-perfil i{
     margin-bottom: 30rem;
 }
 
-#quemsomos .wrapper {
-    display: flex;
-    align-items: center;
+#quemsomos .display-perfil i{
+    margin-bottom: 70rem;
 }
 
+.display-perfil .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-perfil .wrapper:nth-child(2) {
+    display: block;
+    border: 1px solid rgba(255,200,0,.5);
+    padding: 10rem;
+    border-radius: 5rem;
+    -webkit-box-shadow: var(--primary-box-shadow);
+    box-shadow: var(--primary-box-shadow);
+    background-color: var(--primary-grey-dark);
+}
+
+.btn-whatsapp {
+    -webkit-box-shadow: var(--primary-box-shadow);
+    box-shadow: var(--primary-box-shadow);
+    border-radius: 50%;
+}
