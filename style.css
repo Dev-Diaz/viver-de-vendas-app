@@ -20,6 +20,28 @@
     box-sizing: border-box;
 }
 
+*::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #c9c8c8;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb:hover
+{
+	background-color: #b3b2b2;
+}
+
 html {
     font-size: 6.25%;
     scroll-behavior: smooth;
@@ -49,7 +71,7 @@ h2 {
 }
 
 p {
-    font-size: 20rem;
+    font-size: 16rem;
 }
 	
 nav {
@@ -115,20 +137,24 @@ video {
     display: flex;
     justify-content: space-around;
     border-top: 1px solid rgba(255,200,0,.5);
-    padding-top: 30rem;
+    padding-top: 120rem;
+    padding-bottom: 120rem;
 }
 
 #quemsomos .foto-perfil img{
     border: 1px solid rgba(255,200,0,.5);
     border-radius: 5px;
-    width: 450rem;
-    height: calc(100vh - 120rem);
+    width: 400rem;
+    height: calc(100vh - 180rem);
     -webkit-box-shadow: var(--primary-box-shadow);
     box-shadow: var(--primary-box-shadow);
+    margin-right: 10rem;
 }
 
 #quemsomos .display-perfil {
     text-align: left;
+    margin-right: 10rem;
+    margin-left: 10rem;
 }
 
 #quemsomos .display-perfil h1{
@@ -160,8 +186,16 @@ video {
     background-color: var(--primary-grey-dark);
 }
 
-.btn-whatsapp {
-    -webkit-box-shadow: var(--primary-box-shadow);
-    box-shadow: var(--primary-box-shadow);
-    border-radius: 50%;
+#treinamento {
+    color: var(--primary-yellow);
+    border-top: 1px solid rgba(255,200,0,.5);
+    padding-top: 50rem;
+    padding-bottom: 50rem;
+}
+
+#treinamento .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10rem;
 }
